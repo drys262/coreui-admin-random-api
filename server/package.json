@@ -8,7 +8,8 @@
     "start": "node -r module-alias/register ./dist --env=production",
     "dev": "nodemon",
     "test": "nodemon --config ./spec/nodemon.json",
-    "test:no-reloading": "npx ts-node --files -r tsconfig-paths/register ./spec"
+    "test:no-reloading": "npx ts-node --files -r tsconfig-paths/register ./spec",
+    "postinstall": "npm run build"
   },
   "nodemonConfig": {
     "watch": [
@@ -41,7 +42,8 @@
     "jsonfile": "^6.1.0",
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "vercel": "^28.4.17"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
