@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Tables from '../base/tables/Tables'
 import AddressChart from './AddressChart'
 
-const BASE_URL = `${process.env.API_BASE_URL}/api`
+const BASE_URL = `${process.env.REACT_APP_API_BASE_URL}/api`
 
 const Dashboard = () => {
   const [address, setAddress] = useState([])
